@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Collage Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+</head>
+
+<body style="background-color: darkviolet;">
+    <center>
+        <h1 id="mainheading"> Team Internet </h1>
+        <hr>
+        <h4 style="color: red;" class="h4">As soon as the popup appears, please click Allow. After you've spoken a command</h4>
+        <h3 style="color: darkblue;">You can take upto three photos here and make a collage !</h3>
+        <button class="btn btn-danger" onclick="start()" id="startbutton">Start</button>
+        <br>
+        <br>
+        <textarea id="textbox" readonly="true"></textarea>
+        <h4 style="color: darkgreen;" class="h4">Say 'Selfie' after clicking the button for taking your selfie to make a collage </h4>
+        <label>Your Webcam : </label>
+        <div id="camera">
+        </div>
+        <label>All the selfies will be stored here : </label>
+        <div id="resultShow">
+                <div id="result1" class="img"><img id="selfie1" class="img" src="https://c4.wallpaperflare.com/wallpaper/16/671/726/lionel-messi-football-barcelona-hd-wallpaper-thumb.jpg"></div>
+                <br>
+                <div id="result2" class="img"><img id="selfie2" style="width: 500px; height: 300px;" class="img" src="https://wallpaperaccess.com/full/1637842.jpg" style="width: 30%;"></div>
+                <br>
+            <div id="result3" class="img"><img id="selfie3" class="img" style="width: 500px; height: 300px;" src="https://wallpaperaccess.com/full/4442778.jpg" style="width: 50%;"> </div>
+            <br>
+        </div>
+    </center>
+    <br>
+    <br>
+    <div style="text-align: center; background-color: aqua;" class="copy_right_footer">Developed by - Fadil</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
